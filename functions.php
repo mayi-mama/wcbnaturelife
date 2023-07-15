@@ -23,7 +23,8 @@ function theme_setup(){
 
     //アイキャッチ画像
     add_theme_support('post-thumbnails');
-    
+
+
     //メインメニュー
     register_nav_menus(
         array(

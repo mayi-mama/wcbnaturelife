@@ -2,10 +2,10 @@
 
     <main class="main-contents wrapper">
         <div class="post-list">
-            <?php if(have_posts()): while(have_posts()); the_post(); ?>
+            <?php if(have_posts()): while(have_posts()): the_post(); ?>
             <article class="post-item">
                 <a href="<?php echo esc_url(get_permalink()); ?>">
-                    <img src="images/img-fruits.jpg" alt="" class="wp-post-image">
+                　　<img src="images/img-fruits.jpg" alt="" class="wp-post-image">
                 </a>
                 <header class="post-header">
                     <h2 class="post-title">
@@ -15,8 +15,8 @@
                     <?php the_category(); ?>
                 </header>
             </article>
-            <?php endwhile; esle : ?>
-              
+            <?php endwhile; else : ?>
+                <p>記事はありません。</p>
             <?php endif; ?>
         </div>
 
